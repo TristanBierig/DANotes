@@ -237,9 +237,6 @@
     </div>
   </div>
   <div>
-    <app-note
-      *ngFor="let note of this.noteService.items$ | async"
-      [note]="note"
-    ></app-note>
+    <app-note *ngFor="let note of getList()" [note]="note"></app-note>
   </div>
 </div>
